@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 3rem;
+  overflow: hidden;
 }
 
 /* Header */
@@ -90,7 +91,7 @@ body {
 }
 
 .card-holder {
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 3rem;
 }
@@ -107,6 +108,10 @@ body {
     font-size: 1.125rem;
     display: inline-block;
     margin-bottom: 1rem;
+}
+
+.card .slide-pic {
+    display: none;
 }
 
 /* For Whom Section */
@@ -127,6 +132,7 @@ body {
 
 .for-the-ones-icons {
     height: 100vh;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     gap: 1rem;
@@ -161,7 +167,7 @@ body {
 
 .feature-text-card-holder {
     position: relative; 
-    height: 20vh;
+    height: 20vh
 }
 
 .feature-text-card {
@@ -206,94 +212,33 @@ body {
         flex-direction: column;
     }
 
-    .feature-pics-card img {
-        position: absolute;
-        max-width: 70%;
-        max-height: 100%;
-    }
+    .feature-pics-card img { position: absolute; max-width: 70%; max-height: 100%; }
 
     /* Live Venue Pics */
-    #map-pic {
-        top: 2rem;
-        left: 2rem;
-    }
-
-    #options-pic {
-        top: 13rem;
-        left: 6rem;
-    }
+    #map-pic { top: 8%; left: 10%; height: 70% }
+    #options-pic { top: 45%; left: 32%; height: 50% }
 
     /* Filters Pics */
-    #atmosphere-pic {
-        top: 24rem;
-        left: 2rem;
-    }
-
-    #crowd-pic {
-        top: 17rem;
-        left: 5rem;
-        z-index: 1;
-    }
-
-    #times-pic {
-        top: 2rem;
-        left: 2rem;
-    }
-
+    #atmosphere-pic { top: 7%; left: 12%; width: 80% }
+    #times-pic { top: 37%; left: 20%; width: 80%  }
+    #crowd-pic { top: 77%; left: 15%; z-index: 1; width: 80%  }
+    
     /* Vu Score Pics */
-    #score-pic {
-        top: 2rem;
-        left: 2rem;
-    }
-
-    #place-pic {
-        top: 15rem;
-        left: 4rem;
-    }
-
-    #sort-pic {
-        top: 25rem;
-        left: 2rem;
-        z-index: 0;
-        opacity: 1;
-    }
+    #score-pic { top: 10%; left: 15%; width: 80% }
+    #place-pic { top: 40%; left: 25%; z-index: 1; width: 80% }
+    #sort-pic { top: 60%; left: 15%; width: 80% }
 
     /* Check In Pics */
-    #start-pic {
-        top: 2rem;
-        left: 1rem;
-        height: 30rem;
-        width: 14rem;
-    }
-
-    #survey-pic {
-        top: 6rem;
-        left: 9rem;
-        height: 30rem;
-    }
+    #start-pic { top: 5%; left: 5%; width: 60% }
+    #survey-pic { top: 10%; left: 35%; width: 60% }
 
     /* Wingmate Pics */
-    #challenge-pic {
-        top: 13rem;
-        left: 3rem;
-        z-index: 1;
-    }
-
-    #chatbot-pic {
-        top: 4rem;
-        left: 5rem;
-    }
-
-    #tip-pic {
-        top: 2rem;
-        left: 2rem;
-    }
-
-    /* Tips Pic */
-    #tips-pic {
-        left: 3.5rem;
-        height: 90vh
-    }
+    #tip-pic { top: 5%; left: 5%; width: 80% }
+    #challenge-pic { top: 33%; left: 15%; z-index: 1; width: 80% }
+    #chatbot-pic { top: 10%; left: 25%; width: 80% }
+    
+    /* Smart Tips Pic */
+    #tips-pic { top: 2.5%; left: 16%; width: 80%; border-radius: 1rem;}
 
     .feature-pics-card:nth-of-type(1) { z-index: 0; }
     .feature-pics-card:nth-of-type(2) { z-index: 0; }
@@ -437,3 +382,410 @@ body {
     cursor: pointer;
 }
   
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop View Section */
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 6rem;
+    }
+
+    /* Header */
+    #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 5rem;
+    }
+
+    #top-left {
+        font-size: 2.5rem;
+    }
+
+    #top-right {
+        font-size: 1rem;
+        text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-subsection {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    /* Video Section */
+    .video-section {
+        display: flex;
+        height: 90vh;
+        margin-bottom: 6rem;
+        border-radius: 1rem;
+        justify-content: center;
+    }
+
+    .video-section video {
+        width: 100%;
+        border-radius: 1rem;
+        object-fit: contain;
+   
+    }
+
+    /* How Section */
+    .how-section {
+        height: 35vh;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr); 
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2rem;
+        align-items: stretch;
+        margin-bottom: 3rem;
+    }
+
+    .subsection-header-green {
+        grid-column: span 5;
+        grid-row: span 3;
+        font-size: 1.5rem;
+        background-color: #aef87e;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    .how-text-box {
+        grid-column: span 7;
+        grid-row: span 3;
+        padding: 3rem;
+    }
+
+
+    /* Scroll Section */
+    .scroll-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 130vh;
+    }
+
+    .card-holder {
+        /* position: relative;
+        height: 100%;*/
+        width: 100%; 
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card:nth-child(1) { z-index: 3; }
+    .card:nth-child(2) { z-index: 2; }
+    .card:nth-child(3) { z-index: 1; } 
+
+    .card img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+    }
+
+    .step-number, .step-description, .card .step-pic {
+        display: none;
+    }
+
+    .card .slide-pic {
+        display: block;
+    }
+
+    /* For Whom Section */
+    .for-the-ones-icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .icon-card {
+        height: 40vh;
+        padding: 1.5rem;
+        text-align: left;
+        background-color: white;
+        border: 1px solid #191919;
+        border-radius: 1rem;
+        transition: box-shadow 0.2s ease;
+    }
+
+    .icon-card img {
+        height: 40%;
+        margin-bottom: 1rem;
+    }
+
+    .icon-card p {
+        font-size: 1.5rem;
+    }
+
+    .icon-card:hover {
+        background-color: #fffa97;
+    }
+
+    /* Features Section */
+    .features-section {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr); 
+        grid-template-rows: repeat(3, 1fr);
+        gap: 1.5rem;
+        height: 90vh;
+        margin-bottom: 3rem;
+    }
+
+    .features-header {
+        grid-column: span 5;
+    }
+
+    .feature-text-card-holder {
+        position: relative; 
+        height: 100%;
+        grid-column: 1 / 6;
+        grid-row: 2 / 4;
+    }
+
+    .feature-text-card {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        grid-column: 6;
+        grid-row: span 4;
+        background-color: #aef87e;
+        border-radius: 1rem;
+        padding: 0 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature-text-card h2 {
+        font-size: 3rem;
+        font-weight: normal;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .feature-text-card p {
+        font-size: 1.5rem;
+    }
+
+    .feature-pics-card-holder {
+        height: 100%;
+        grid-column: span 7;
+        grid-row: span 3;
+        position: relative;
+        border-radius: 1rem;
+    }
+
+    .feature-pics-card {
+        width: 100%;
+        height: 100%;
+        background-color: #f1f2f6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 1rem;
+    }
+
+    .feature-pics-card img {
+        position: absolute;
+    }
+
+        /* Live Venue Pics */
+        #map-pic { top: 8%; left: 12%; width: 35%; }
+        #options-pic { top: 15%; left: 53%; width: 35% }
+
+        /* Filters Pics */
+        #atmosphere-pic { top: 10%; left: 15%; width: 40% }
+        #times-pic { top: 40%; left: 45%; width: 40%  }
+        #crowd-pic { top: 60%; left: 15%; z-index: 1; width: 40%  }
+        
+        /* Vu Score Pics */
+        #score-pic { top: 10%; left: 15%; width: 40% }
+        #place-pic { top: 40%; left: 45%; z-index: 1; width: 40% }
+        #sort-pic { top: 60%; left: 15%; width: 40% }
+
+        /* Check In Pics */
+        #start-pic { top: 5%; left: 10%; width: 38% }
+        #survey-pic { top: .5%; left: 55%; width: 35% }
+
+        /* Wingmate Pics */
+        #tip-pic { top: 5%; left: 10%; width: 40% }
+        #challenge-pic { top: 30%; left: 30%; z-index: 1; width: 40% }
+        #chatbot-pic { top: 3%; left: 50%; width: 40% }
+        
+        /* Smart Tips Pic */
+        #tips-pic { top: 0; left: 30%; width: 40%; border-radius: 1rem;}
+
+
+        .feature-pics-card:nth-of-type(1) { z-index: 0; }
+
+
+
+    .nav-buttons {
+        display: flex;
+        z-index: 999;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        align-items: center;
+        justify-content: space-between;
+        pointer-events: none;
+    }
+
+    .nav-button {
+        font-size: 4rem;
+        pointer-events: auto;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Scrolling Bar */
+        .scrolling-bar {
+            margin-bottom: 3rem;
+        }
+
+    /* Email Section */
+    .gradient-background {
+        height: 80vh;
+        border-radius: 1rem;
+    }
+
+    .gradient-background::before {  /* Creates element that can be rotated without rotating entire box*/
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 150%; 
+        height: 150%;
+        background-image: url("media/email_background.png");
+        background-size: cover;
+        background-position: center;
+        transform: translate(-50%, -50%);
+        animation: rotateBackground 20s infinite alternate ease-in-out;
+        z-index: -1;
+    }
+  
+    /* @keyframes rotateBackground {
+        from {
+        transform: translate(-50%, -50%) rotate(0deg) scale(1.65);
+        }
+        to {
+        transform: translate(-50%, -50%) rotate(40deg) scale(1.65);
+        }
+    } */
+
+    .content-wrapper h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .content-wrapper p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .notify-form input {
+        max-width: 500px;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 389px) {
+    .for-the-ones-icons {
+        height: auto;
+    }
+
+    .feature-text-card-holder {
+        height: 30vh;
+    }
+
+    .feature-text-card {
+        height: 30vh;
+    }
+
+    .feature-text-card h2 {
+        font-size: 1.5rem;
+    }   
+
+    .feature-text-card p {
+        font-size: 1rem;
+        margin: 0;
+    }   
+    
+    /* Live Venue Pics */
+    #map-pic { top: 8%; left: 10%; height: 70% }
+    #options-pic { top: 45%; left: 37%; height: 50% }
+
+    /* Filters Pics */
+    #atmosphere-pic { top: 7%; left: 12%; width: 80% }
+    #times-pic { top: 37%; left: 20%; width: 80%  }
+    #crowd-pic { top: 77%; left: 15%; z-index: 1; width: 80%  }
+    
+    /* Vu Score Pics */
+    #score-pic { top: 10%; left: 15%; width: 80% }
+    #place-pic { top: 40%; left: 25%; z-index: 1; width: 80% }
+    #sort-pic { top: 60%; left: 15%; width: 80% }
+
+    /* Check In Pics */
+    #start-pic { top: 5%; left: 5%; width: 55% }
+    #survey-pic { top: 10%; left: 45%; width: 50% }
+
+    /* Wingmate Pics */
+    #tip-pic { top: 5%; left: 5%; width: 80% }
+    #challenge-pic { top: 30%; left: 15%; z-index: 1; width: 80% }
+    #chatbot-pic { top: 1%; left: 25%; width: 80% }
+    
+    /* Smart Tips Pic */
+    #tips-pic { top: 0; left: 16%; width: 80%; border-radius: 1rem;}
+
+}
