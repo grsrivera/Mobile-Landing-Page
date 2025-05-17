@@ -212,33 +212,33 @@ body {
         flex-direction: column;
     }
 
-    .feature-pics-card img { position: absolute; max-width: 70%; max-height: 100%; }
+    .feature-pics-card img { position: absolute; max-height: 100%; }
 
     /* Live Venue Pics */
     #map-pic { top: 8%; left: 10%; height: 70% }
     #options-pic { top: 45%; left: 32%; height: 50% }
 
     /* Filters Pics */
-    #atmosphere-pic { top: 7%; left: 12%; width: 80% }
-    #times-pic { top: 37%; left: 20%; width: 80%  }
-    #crowd-pic { top: 77%; left: 15%; z-index: 1; width: 80%  }
+    #atmosphere-pic { top: 7%; left: 12%; width: 70% }
+    #times-pic { top: 37%; left: 20%; width: 70%  }
+    #crowd-pic { top: 77%; left: 15%; z-index: 1; width: 70%  }
     
     /* Vu Score Pics */
-    #score-pic { top: 10%; left: 15%; width: 80% }
-    #place-pic { top: 40%; left: 25%; z-index: 1; width: 80% }
-    #sort-pic { top: 60%; left: 15%; width: 80% }
+    #score-pic { top: 10%; left: 15%; width: 70% }
+    #place-pic { top: 40%; left: 25%; z-index: 1; width: 70% }
+    #sort-pic { top: 60%; left: 15%; width: 70% }
 
     /* Check In Pics */
     #start-pic { top: 5%; left: 5%; width: 60% }
     #survey-pic { top: 10%; left: 35%; width: 60% }
 
     /* Wingmate Pics */
-    #tip-pic { top: 5%; left: 5%; width: 80% }
-    #challenge-pic { top: 33%; left: 15%; z-index: 1; width: 80% }
-    #chatbot-pic { top: 10%; left: 25%; width: 80% }
+    #tip-pic { top: 5%; left: 5%; width: 70% }
+    #challenge-pic { top: 33%; left: 15%; z-index: 1; width: 70% }
+    #chatbot-pic { top: 10%; left: 25%; width: 70% }
     
     /* Smart Tips Pic */
-    #tips-pic { top: 2.5%; left: 16%; width: 80%; border-radius: 1rem;}
+    #tips-pic { top: 2.5%; left: 16%; width: 70%; border-radius: 1rem;}
 
     .feature-pics-card:nth-of-type(1) { z-index: 0; }
     .feature-pics-card:nth-of-type(2) { z-index: 0; }
@@ -405,7 +405,7 @@ body {
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
     .container {
         padding: 0 6rem;
     }
@@ -738,7 +738,7 @@ body {
 
 
 
-
+/* Phones */
 
 @media screen and (max-width: 389px) {
     .for-the-ones-icons {
@@ -787,5 +787,39 @@ body {
     
     /* Smart Tips Pic */
     #tips-pic { top: 0; left: 16%; width: 80%; border-radius: 1rem;}
+
+}
+
+
+
+/* Tablets */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    /* Live Venue Pics */
+    #map-pic { top: 8%; left: 15%; height: 70% }
+    #options-pic { top: 35%; left: 55%; height: 50% }
+
+    /* Filters Pics */
+    #atmosphere-pic { top: 7%; left: 12%; width: 60% }
+    #times-pic { top: 37%; left: 35%; width: 60%  }
+    #crowd-pic { top: 77%; left: 15%; z-index: 1; width: 60%  }
+    
+    /* Vu Score Pics */
+    #score-pic { top: 10%; left: 15%; width: 60% }
+    #place-pic { top: 41%; left: 25%; z-index: 1; width: 60% }
+    #sort-pic { top: 65%; left: 15%; width: 60% }
+
+    /* Check In Pics */
+    #start-pic { top: 0%; left: 5%; width: 55% }
+    #survey-pic { top: 1%; left: 50%; width: 45% }
+
+    /* Wingmate Pics */
+    #tip-pic { top: 5%; left: 5%; width: 60% }
+    #challenge-pic { top: 30%; left: 15%; z-index: 1; width: 60% }
+    #chatbot-pic { top: 1%; left: 25%; width: 60% }
+    
+    /* Smart Tips Pic */
+    #tips-pic { top: 0; left: 20%; width: 60%; border-radius: 1rem;}
+
+
 
 }
