@@ -506,7 +506,7 @@ body {
     }
 
     .card {
-        position: relative;
+        position: absolute;;
         overflow: hidden;
     }
 
@@ -738,7 +738,7 @@ body {
 
 
 
-/* Phones */
+/* Smaller Phones */
 
 @media screen and (max-width: 389px) {
     .for-the-ones-icons {
